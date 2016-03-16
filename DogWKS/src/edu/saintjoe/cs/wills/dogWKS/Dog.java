@@ -1,9 +1,8 @@
 package edu.saintjoe.cs.wills.dogWKS;
 
 public class Dog {
-
+	int size;
 	String name;
-	
 	public static void main(String[] args) {
 		// make a Dog object and access it 
 		Dog dog1 = new Dog();
@@ -35,8 +34,16 @@ public class Dog {
 		}
 }
 
-	public void bark() { 
-		System.out.println(name + "says Ruff!");
+	public void bark() {
+		if (size > 60) {
+			System.out.println("Whoof! Whoof!");
+		}
+		else if (size > 14) {
+			System.out.println("Ruff! Ruff!");
+		} else {
+			System.out.println("Yip! Yip!");
+		}
+		System.out.println(name + " says Ruff!");
 	
 	}
 	public void eat() { }
